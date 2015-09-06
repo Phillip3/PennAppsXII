@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BluZone Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		setInterval(function(){ 
+			$.get(url) // Make the request
+			.success(function(data) {
+				$('#numberSpan').html(data);
+			});
+		}, 3000);
+	</script>
+</head>
+<body>
+	<span id="numberSpan"></span>
+</body>
+</html>
