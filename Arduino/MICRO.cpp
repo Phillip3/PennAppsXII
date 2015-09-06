@@ -31,6 +31,7 @@ const int loopLED = 5;
 byte single_byte;
 String string;
 const int BUZZER = 3;
+int state = 0;
 
 /*=========================================================================
     APPLICATION SETTINGS
@@ -105,7 +106,7 @@ void setup(void)
   pinMode(LED, OUTPUT);
   pinMode(loopLED, OUTPUT);
   pinMode(BUZZER, OUTPUT);
-  while (!Serial);  // required for Flora & Micro
+  // while (!Serial);  // required for Flora & Micro
   delay(500);
 
   Serial.begin(115200);
@@ -168,42 +169,50 @@ void loop(void)
 {
   digitalWrite(loopLED, HIGH);
   // Check for user input
-  char inputs[BUFSIZE+1];
-//  Serial.println(inputs);
-  if ( getUserInput(inputs, BUFSIZE) )
-  {
-    // Send characters to Bluefruit
-    Serial.print("[Send] ");
-    Serial.println(inputs);
+//   char inputs[BUFSIZE+1];
+// //  Serial.println(inputs);
+//   if ( getUserInput(inputs, BUFSIZE) )
+//   {
+//     // Send characters to Bluefruit
+//     Serial.print("[Send] ");
+//     Serial.println(inputs);
 
-    ble.print("AT+BLEUARTTX=");
-    ble.println(inputs);
+//     ble.print("AT+BLEUARTTX=");
+//     ble.println(inputs);
 
-    // check response stastus
-    if (! ble.waitForOK() ) {
-      Serial.println(F("Failed to send?"));
-    }
-  }
+//     // check response stastus
+//     if (! ble.waitForOK() ) {
+//       Serial.println(F("Failed to send?"));
+//     }
+//   }
 
   // Check for incoming characters from Bluefruit
   ble.println("AT+BLEUARTRX");
   ble.readline();
-  if (strcmp(ble.buffer, "OK") == 0) {
-    // no data
-    return;
-  }
+  // if (strcmp(ble.buffer, "OK") == 0) {
+  //   // no data
+  //   return;
+  // }
   // Some data was found, its in the buffer
   Serial.print(F("[Recv] ")); Serial.println(ble.buffer);
 
   if (strcmp(ble.buffer, "UNMUTE") == 0) {
-    //Serial.println("Is ON");
+    state = 1;
+  } else if (strcmp(ble.buffer, "MUTE") == 0) {
+    state = 0;
+  }
+  
+  if (! ble.isConnected()) {
+    state = 0;
+  }
+  if (state) {
     digitalWrite(LED, HIGH);
     tone(BUZZER, 200);
-  } else if (strcmp(ble.buffer, "MUTE") == 0) {
-     digitalWrite(LED, LOW);
-     noTone(BUZZER);
+  } else {
+    digitalWrite(LED, LOW);
+    noTone(BUZZER);
   }
-  ble.waitForOK();
+//  ble.waitForOK();
 }
 
 /**************************************************************************/
