@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tKp-NL-QuG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-UltraLight</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Connected Zones-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BluZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc9-bA-a9c">
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="300"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fc9-bA-a9c" secondAttribute="bottom" constant="8" symbolic="YES" id="DQH-Xc-Plx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Fc9-bA-a9c" secondAttribute="leading" id="Dyc-u8-Swi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fc9-bA-a9c" secondAttribute="trailing" id="HR8-aI-6G5"/>
+                            <constraint firstItem="Fc9-bA-a9c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Toe-Lh-A8S"/>
+                            <constraint firstItem="Fc9-bA-a9c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cag-2p-7U4"/>
+                            <constraint firstItem="Fc9-bA-a9c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gAP-ga-1nq"/>
+                            <constraint firstItem="Fc9-bA-a9c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="x1p-ix-OJu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Toe-Lh-A8S"/>
+                                <exclude reference="cag-2p-7U4"/>
+                                <exclude reference="gAP-ga-1nq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Connected Zones" id="ey6-cx-wHb">
+                        <barButtonItem key="rightBarButtonItem" title="Zones" id="nv6-dB-CCT">
+                            <connections>
+                                <action selector="settings:" destination="BYZ-38-t0r" id="ZaV-XA-HF3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="numberLabel" destination="Fc9-bA-a9c" id="oyq-kR-8j0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="-6"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="P8G-7X-pnx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PbM-zV-hR3" customClass="SettingsViewController" customModule="BluZone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kRL-e5-DQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="xmV-QU-YZ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MNJ-jf-Mpu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many zones do you have?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnp-IH-yKi">
+                                <rect key="frame" x="184" y="164" width="231" height="19.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqj-Ss-KA3">
+                                <rect key="frame" x="20" y="192" width="560" height="216"/>
+                                <animations/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFi-nc-l6o">
+                                <rect key="frame" x="540" y="560" width="40" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="done:" destination="PbM-zV-hR3" eventType="touchUpInside" id="g6b-Gg-5xy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eqj-Ss-KA3" firstAttribute="leading" secondItem="MNJ-jf-Mpu" secondAttribute="leadingMargin" id="ETC-kF-vnK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QFi-nc-l6o" secondAttribute="trailing" id="MWz-cJ-j9l"/>
+                            <constraint firstItem="eqj-Ss-KA3" firstAttribute="top" secondItem="Fnp-IH-yKi" secondAttribute="bottom" constant="8" id="RAz-Sv-NXi"/>
+                            <constraint firstItem="eqj-Ss-KA3" firstAttribute="centerX" secondItem="MNJ-jf-Mpu" secondAttribute="centerX" id="Ttd-Ai-M0U"/>
+                            <constraint firstItem="Fnp-IH-yKi" firstAttribute="centerX" secondItem="MNJ-jf-Mpu" secondAttribute="centerX" id="Wbo-IN-YUn"/>
+                            <constraint firstItem="eqj-Ss-KA3" firstAttribute="leading" secondItem="MNJ-jf-Mpu" secondAttribute="leadingMargin" constant="-6" id="cOr-yF-bbC"/>
+                            <constraint firstItem="eqj-Ss-KA3" firstAttribute="centerY" secondItem="MNJ-jf-Mpu" secondAttribute="centerY" id="d45-hC-CcD"/>
+                            <constraint firstItem="xmV-QU-YZ3" firstAttribute="top" secondItem="QFi-nc-l6o" secondAttribute="bottom" constant="8" id="f4c-Ql-uWc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eqj-Ss-KA3" secondAttribute="trailing" id="fiV-AQ-dO2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cOr-yF-bbC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="eqj-Ss-KA3" id="Xod-Pe-GfT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIh-tp-2GV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043" y="798"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RxF-KL-B9H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tKp-NL-QuG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gvt-un-vjb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hEt-Mi-FTB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqw-RA-GdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="-6"/>
+        </scene>
+    </scenes>
+</document>

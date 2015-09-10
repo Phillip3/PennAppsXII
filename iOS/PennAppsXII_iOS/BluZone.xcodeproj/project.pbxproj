@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DBFD5281B9B4C88005E4DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFD5271B9B4C88005E4DEB /* AppDelegate.swift */; };
+		9DBFD52A1B9B4C88005E4DEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFD5291B9B4C88005E4DEB /* ViewController.swift */; };
+		9DBFD52D1B9B4C88005E4DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBFD52B1B9B4C88005E4DEB /* Main.storyboard */; };
+		9DBFD52F1B9B4C88005E4DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DBFD52E1B9B4C88005E4DEB /* Assets.xcassets */; };
+		9DBFD5321B9B4C88005E4DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DBFD5301B9B4C88005E4DEB /* LaunchScreen.storyboard */; };
+		9DBFD53D1B9B4C88005E4DEB /* PennAppsXII_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFD53C1B9B4C88005E4DEB /* PennAppsXII_iOSTests.swift */; };
+		9DBFD5481B9B4C88005E4DEB /* PennAppsXII_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFD5471B9B4C88005E4DEB /* PennAppsXII_iOSUITests.swift */; };
+		9DBFD5561B9B4CA8005E4DEB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBFD5551B9B4CA8005E4DEB /* CoreBluetooth.framework */; };
+		9DBFD5581B9B4D21005E4DEB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFD5571B9B4D21005E4DEB /* Model.swift */; };
+		9DBFD5651B9BB695005E4DEB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBFD5641B9BB695005E4DEB /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DBFD5391B9B4C88005E4DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DBFD51C1B9B4C88005E4DEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DBFD5231B9B4C88005E4DEB;
+			remoteInfo = PennAppsXII_iOS;
+		};
+		9DBFD5441B9B4C88005E4DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DBFD51C1B9B4C88005E4DEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DBFD5231B9B4C88005E4DEB;
+			remoteInfo = PennAppsXII_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DBFD5241B9B4C88005E4DEB /* BluZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBFD5271B9B4C88005E4DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DBFD5291B9B4C88005E4DEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DBFD52C1B9B4C88005E4DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DBFD52E1B9B4C88005E4DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DBFD5311B9B4C88005E4DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DBFD5331B9B4C88005E4DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBFD5381B9B4C88005E4DEB /* BluZone.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluZone.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBFD53C1B9B4C88005E4DEB /* PennAppsXII_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennAppsXII_iOSTests.swift; sourceTree = "<group>"; };
+		9DBFD53E1B9B4C88005E4DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBFD5431B9B4C88005E4DEB /* BluZone.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluZone.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DBFD5471B9B4C88005E4DEB /* PennAppsXII_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennAppsXII_iOSUITests.swift; sourceTree = "<group>"; };
+		9DBFD5491B9B4C88005E4DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DBFD5551B9B4CA8005E4DEB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9DBFD5571B9B4D21005E4DEB /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9DBFD55B1B9B6C72005E4DEB /* PennAppsXII_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PennAppsXII_iOS.entitlements; sourceTree = "<group>"; };
+		9DBFD5641B9BB695005E4DEB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DBFD5211B9B4C88005E4DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBFD5561B9B4CA8005E4DEB /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBFD5351B9B4C88005E4DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBFD5401B9B4C88005E4DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DBFD51B1B9B4C88005E4DEB = {
+			isa = PBXGroup;
+			children = (
+				9DBFD5551B9B4CA8005E4DEB /* CoreBluetooth.framework */,
+				9DBFD5261B9B4C88005E4DEB /* PennAppsXII_iOS */,
+				9DBFD53B1B9B4C88005E4DEB /* PennAppsXII_iOSTests */,
+				9DBFD5461B9B4C88005E4DEB /* PennAppsXII_iOSUITests */,
+				9DBFD5251B9B4C88005E4DEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DBFD5251B9B4C88005E4DEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DBFD5241B9B4C88005E4DEB /* BluZone.app */,
+				9DBFD5381B9B4C88005E4DEB /* BluZone.xctest */,
+				9DBFD5431B9B4C88005E4DEB /* BluZone.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DBFD5261B9B4C88005E4DEB /* PennAppsXII_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9DBFD55B1B9B6C72005E4DEB /* PennAppsXII_iOS.entitlements */,
+				9DBFD5271B9B4C88005E4DEB /* AppDelegate.swift */,
+				9DBFD5291B9B4C88005E4DEB /* ViewController.swift */,
+				9DBFD52B1B9B4C88005E4DEB /* Main.storyboard */,
+				9DBFD52E1B9B4C88005E4DEB /* Assets.xcassets */,
+				9DBFD5301B9B4C88005E4DEB /* LaunchScreen.storyboard */,
+				9DBFD5331B9B4C88005E4DEB /* Info.plist */,
+				9DBFD5571B9B4D21005E4DEB /* Model.swift */,
+				9DBFD5641B9BB695005E4DEB /* Constants.swift */,
+			);
+			path = PennAppsXII_iOS;
+			sourceTree = "<group>";
+		};
+		9DBFD53B1B9B4C88005E4DEB /* PennAppsXII_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DBFD53C1B9B4C88005E4DEB /* PennAppsXII_iOSTests.swift */,
+				9DBFD53E1B9B4C88005E4DEB /* Info.plist */,
+			);
+			path = PennAppsXII_iOSTests;
+			sourceTree = "<group>";
+		};
+		9DBFD5461B9B4C88005E4DEB /* PennAppsXII_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9DBFD5471B9B4C88005E4DEB /* PennAppsXII_iOSUITests.swift */,
+				9DBFD5491B9B4C88005E4DEB /* Info.plist */,
+			);
+			path = PennAppsXII_iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DBFD5231B9B4C88005E4DEB /* BluZone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DBFD54C1B9B4C88005E4DEB /* Build configuration list for PBXNativeTarget "BluZone" */;
+			buildPhases = (
+				9DBFD5201B9B4C88005E4DEB /* Sources */,
+				9DBFD5211B9B4C88005E4DEB /* Frameworks */,
+				9DBFD5221B9B4C88005E4DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluZone;
+			productName = PennAppsXII_iOS;
+			productReference = 9DBFD5241B9B4C88005E4DEB /* BluZone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DBFD5371B9B4C88005E4DEB /* BluZoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DBFD54F1B9B4C88005E4DEB /* Build configuration list for PBXNativeTarget "BluZoneTests" */;
+			buildPhases = (
+				9DBFD5341B9B4C88005E4DEB /* Sources */,
+				9DBFD5351B9B4C88005E4DEB /* Frameworks */,
+				9DBFD5361B9B4C88005E4DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DBFD53A1B9B4C88005E4DEB /* PBXTargetDependency */,
+			);
+			name = BluZoneTests;
+			productName = PennAppsXII_iOSTests;
+			productReference = 9DBFD5381B9B4C88005E4DEB /* BluZone.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9DBFD5421B9B4C88005E4DEB /* BluZoneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DBFD5521B9B4C88005E4DEB /* Build configuration list for PBXNativeTarget "BluZoneUITests" */;
+			buildPhases = (
+				9DBFD53F1B9B4C88005E4DEB /* Sources */,
+				9DBFD5401B9B4C88005E4DEB /* Frameworks */,
+				9DBFD5411B9B4C88005E4DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DBFD5451B9B4C88005E4DEB /* PBXTargetDependency */,
+			);
+			name = BluZoneUITests;
+			productName = PennAppsXII_iOSUITests;
+			productReference = 9DBFD5431B9B4C88005E4DEB /* BluZone.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DBFD51C1B9B4C88005E4DEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					9DBFD5231B9B4C88005E4DEB = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = R2NS2MM2UJ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
+					};
+					9DBFD5371B9B4C88005E4DEB = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9DBFD5231B9B4C88005E4DEB;
+					};
+					9DBFD5421B9B4C88005E4DEB = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9DBFD5231B9B4C88005E4DEB;
+					};
+				};
+			};
+			buildConfigurationList = 9DBFD51F1B9B4C88005E4DEB /* Build configuration list for PBXProject "BluZone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DBFD51B1B9B4C88005E4DEB;
+			productRefGroup = 9DBFD5251B9B4C88005E4DEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DBFD5231B9B4C88005E4DEB /* BluZone */,
+				9DBFD5371B9B4C88005E4DEB /* BluZoneTests */,
+				9DBFD5421B9B4C88005E4DEB /* BluZoneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DBFD5221B9B4C88005E4DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBFD5321B9B4C88005E4DEB /* LaunchScreen.storyboard in Resources */,
+				9DBFD52F1B9B4C88005E4DEB /* Assets.xcassets in Resources */,
+				9DBFD52D1B9B4C88005E4DEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBFD5361B9B4C88005E4DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBFD5411B9B4C88005E4DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DBFD5201B9B4C88005E4DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBFD5581B9B4D21005E4DEB /* Model.swift in Sources */,
+				9DBFD52A1B9B4C88005E4DEB /* ViewController.swift in Sources */,
+				9DBFD5281B9B4C88005E4DEB /* AppDelegate.swift in Sources */,
+				9DBFD5651B9BB695005E4DEB /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBFD5341B9B4C88005E4DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBFD53D1B9B4C88005E4DEB /* PennAppsXII_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DBFD53F1B9B4C88005E4DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DBFD5481B9B4C88005E4DEB /* PennAppsXII_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DBFD53A1B9B4C88005E4DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DBFD5231B9B4C88005E4DEB /* BluZone */;
+			targetProxy = 9DBFD5391B9B4C88005E4DEB /* PBXContainerItemProxy */;
+		};
+		9DBFD5451B9B4C88005E4DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DBFD5231B9B4C88005E4DEB /* BluZone */;
+			targetProxy = 9DBFD5441B9B4C88005E4DEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DBFD52B1B9B4C88005E4DEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DBFD52C1B9B4C88005E4DEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DBFD5301B9B4C88005E4DEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DBFD5311B9B4C88005E4DEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DBFD54A1B9B4C88005E4DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DBFD54B1B9B4C88005E4DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DBFD54D1B9B4C88005E4DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PennAppsXII_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platypus.PennAppsXII-iOS";
+				PRODUCT_NAME = BluZone;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		9DBFD54E1B9B4C88005E4DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PennAppsXII_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platypus.PennAppsXII-iOS";
+				PRODUCT_NAME = BluZone;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		9DBFD5501B9B4C88005E4DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PennAppsXII_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platypus.PennAppsXII-iOSTests";
+				PRODUCT_NAME = BluZone;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluZone.app/BluZone";
+			};
+			name = Debug;
+		};
+		9DBFD5511B9B4C88005E4DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PennAppsXII_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platypus.PennAppsXII-iOSTests";
+				PRODUCT_NAME = BluZone;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluZone.app/BluZone";
+			};
+			name = Release;
+		};
+		9DBFD5531B9B4C88005E4DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PennAppsXII_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platypus.PennAppsXII-iOSUITests";
+				PRODUCT_NAME = BluZone;
+				TEST_TARGET_NAME = PennAppsXII_iOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9DBFD5541B9B4C88005E4DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PennAppsXII_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.platypus.PennAppsXII-iOSUITests";
+				PRODUCT_NAME = BluZone;
+				TEST_TARGET_NAME = PennAppsXII_iOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DBFD51F1B9B4C88005E4DEB /* Build configuration list for PBXProject "BluZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBFD54A1B9B4C88005E4DEB /* Debug */,
+				9DBFD54B1B9B4C88005E4DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DBFD54C1B9B4C88005E4DEB /* Build configuration list for PBXNativeTarget "BluZone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBFD54D1B9B4C88005E4DEB /* Debug */,
+				9DBFD54E1B9B4C88005E4DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DBFD54F1B9B4C88005E4DEB /* Build configuration list for PBXNativeTarget "BluZoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBFD5501B9B4C88005E4DEB /* Debug */,
+				9DBFD5511B9B4C88005E4DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DBFD5521B9B4C88005E4DEB /* Build configuration list for PBXNativeTarget "BluZoneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBFD5531B9B4C88005E4DEB /* Debug */,
+				9DBFD5541B9B4C88005E4DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DBFD51C1B9B4C88005E4DEB /* Project object */;
+}
